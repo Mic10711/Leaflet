@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name= "description" content="Professional Portfolio">
+  <title>Michael Aquino's Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="WRX.jpg">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+</head>
+<header class="head1">
+  <h1>Michael Aquino</h1><br><br>
+  <h2>My life as a developer!</h2><br>
+</header>
+  <body class="body">
+    <div class="container">
+  <div class="row">
+<!--  card 1    -->
+    <div class="card-group shadow-lg p-3 mb-5 bg-body rounded">
+    
+    <div class="card text-bg-light mb-3" style="max-width:100%;">
+    <img src="project1.png" class="card-img-top" alt="project1">
+    <div class="card-body">
+      <h5 class="card-title">First Github Personal Webpage</h5>
+      <p class="card-text">Clicking on this link will bring you to my first Github repository I ever made as a project during ym time in Correlation One. <a href=“https://github.com/Mic10711/personal-webpage.git” target=“_blank” style=“color:#F9F5EB”>Here</a> </p>
+    </div>
+    
+  </div>
+  
+    <div class="card text-bg-light mb-3" style="max-width: 100%;">
+    <img src="project2.jpg" class="card-img-top" alt="project2">
+    <div class="card-body">
+      <h5 class="card-title">Image Slider</h5>
+      <p class="card-text">This project is a random picture image slider created as a project in Correlation One. I also used the knowledge I learned to create the slider below showcasing my other projects. Click the link to see the random image slider! <a href="https://github.com/Mic10711/Image-Slider.git" target=“_blank” style=“color:#F9F5EB”>Here</a> </p>
+    </div>
+    
+  </div>
+  
+    <div class="card text-bg-light mb-3" style="max-width: 100%;">
+    <img src="project3.jpg" class="card-img-top" alt="project3">
+    <div class="card-body">
+      <h5 class="card-title">Dark Mode Toggle</h5>
+      <p class="card-text"> Click the link to see another project created while in Corrlation One which is a basic light/dark mode toggle.<br> <a href=“https://github.com/Mic10711/Dark-mode-toggle.git” target=“_blank” style=“color:#F9F5EB”>Here</a></p>
+    </div>
+    
+  </div>
+</div>
+</div>
+  </div>
+</div>
+      <div class="container" align="center">
+    <div class="project-heading" align="center">
+      <h2 class="title">Projects Completed</h2>
+      <div class="sub">Click the buttons to look at my other projects!<br></div>
+    </div>
+
+    <div id="project-slider">
+      <img src="project4.jpg" alt="Project 4">
+      <img src="project5.jpg" alt="Project 5">
+      <img src="project6.jpg" alt="Project 6">
+      <!-- Replace with future projects-->
+      <button id="prev">&lt;</button>
+      <button id="next">&gt;</button>
+    </div>
+  </div>
+  
+    <br><br>
+<h2 class= "head1">Leaflet Example</h2><br>
+<div id="map" style="width: 500px; height: 400px;"></div> <!-- Display size of map-->
+    <script>
+        const map = L.map('map').setView([36.188110, //latitude
+            -115.176468], //longitude
+            12);    // starting zoom
+        const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19, //max zoom you can do
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(map); // Attribution gives credit to the source
+</script> <br> <br>
+  
+  <div id="form-submitted">Form submitted!</div>
+  <form id="cForm" action="/" method="post">
+  <div class="formInput">
+    <h3>Contact me!</h3><br>
+    <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" placeholder="Enter your first name" class="form-check1 error" required><br>
+    </div>
+    <div class="formInput">
+    <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" placeholder="Enter your last name" class="form-check1 error" required><br>
+    </div>
+    <div class="formInput">
+    <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" placeholder="Enter your email" class="form-check1 error" required><br><br>
+  <input type="submit" id="submitB"></input>
+      </div>
+</form>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+  <footer align="center"> Thanks for visiting my welcome page! <p><a href=“www.linkedin.com/in/michael--aquino” target=“_blank”>LinkedIn</a></p>
+  </footer>
+</html>
